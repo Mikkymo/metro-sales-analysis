@@ -1,37 +1,80 @@
-# Metro Sales Analysis
+Metro Sales Analysis
 
-## Project Overview
+Show Image
+Show Image
+Show Image
 
-This project analyzes Metro Sales performance to identify the factors contributing to a 53% decline in revenue. Using Microsoft Excel, interactive dashboards and business analysis techniques were applied to uncover trends, performance gaps, and revenue drivers.
+An Excel-based business analysis investigating the factors behind a 53% revenue decline at Metro Sales — covering regional performance, product category gaps, customer segments, and seasonal demand patterns.
 
-## Business Problem
 
-Metro Sales experienced a significant decline in revenue. The objective of this analysis was to identify underperforming regions, products, and customer segments and provide recommendations to improve business performance.
+Table of Contents
 
-## Tools Used
 
-* Microsoft Excel
-* Pivot Tables
-* Pivot Charts
-* Dashboard Design
-* Business Analysis
+Business Problem
+Dashboard Preview
+Key Insights
+Recommendations
+Project Structure
+Tools Used
+Author
 
-## Key Insights
 
-* Revenue declined significantly compared to the previous period.
-* Certain regions consistently underperformed.
-* A small number of product categories contributed most of the revenue decline.
-* Sales performance showed clear seasonal trends.
 
-## Recommendations
+Business Problem
 
-* Focus marketing efforts on high-performing regions.
-* Review underperforming product categories.
-* Improve inventory planning during peak demand periods.
-* Monitor key sales metrics through dashboards.
+Metro Sales recorded a 53% drop in revenue compared to the previous period. The analysis aimed to answer three questions:
 
-## Files Included
 
-* Metro_Sales.xlsx
-* Metro_Sales_Report.pdf
-* Metro_Sales_Dashboard.png
+Which regions, products, and customer segments are underperforming?
+Are there seasonal patterns driving the decline?
+What specific actions can reverse the trend?
+
+
+
+Dashboard Preview
+
+Show Image
+
+
+Built entirely in Microsoft Excel using Pivot Tables, Pivot Charts, and dynamic slicers for interactive filtering.
+
+
+
+
+Key Insights
+
+
+Revenue dropped 53% compared to the prior period — the decline was concentrated in specific regions and product categories, not spread evenly across the business
+Certain regions consistently underperformed, pulling down overall numbers while high-performing regions held steady
+A small number of product categories drove the majority of the revenue loss — the problem is concentrated, not broad
+Clear seasonal demand patterns were identified, pointing to inventory and planning gaps during peak periods
+
+
+
+Recommendations
+
+PriorityActionRationale🔴 HighPut underperforming regions on a targeted recovery planRegion-level data shows consistent gaps that compound over time🔴 HighReview and restructure failing product categoriesA small number of SKUs are responsible for most of the revenue loss🟡 MediumAlign inventory planning with seasonal demand peaksMissing peak windows directly costs revenue🟢 OngoingTrack KPIs through the dashboard month-on-monthPrevents the same patterns from going undetected again
+
+
+Project Structure
+
+metro-sales-analysis/
+│
+├── Metro_Sales.xlsx             # Full dataset and analysis workbook
+├── Metro_Sales_Report.pdf       # Written findings and recommendations
+├── Metro_Sales_Dashboard.png    # Dashboard screenshot
+└── README.md
+
+
+Tools Used
+
+ToolPurposeMicrosoft ExcelData cleaning, analysis, and dashboardPivot TablesAggregating sales by region, product, and periodPivot ChartsVisual representation of trends and comparisonsDashboard DesignInteractive summary for business stakeholders
+
+
+Author
+
+Ogo Chukwuemeka Okereke
+Data Analyst · Abuja, Nigeria
+
+Show Image
+Show Image
