@@ -30,8 +30,6 @@ Metro Sales recorded a **53% drop in revenue** compared to the previous period. 
 
 ## Dashboard Preview
 
-![Metro Sales Dashboard](Metro_Sales_Dashboard.png)
-
 > Built in Microsoft Excel using Pivot Tables, Pivot Charts, and dynamic slicers for interactive filtering.
 
 ---
@@ -85,8 +83,8 @@ metro-sales-analysis/
 **Ogo Chukwuemeka Okereke**  
 Data Analyst · Abuja, Nigeria
 
-[![LinkedIn](https://linkedin.com/in/ogochukwuemeka)
-[![Portfolio](https://mikkymo.github.io/portfolio/)
+[LinkedIn](https://linkedin.com/in/ogochukwuemeka)
+[Portfolio](https://mikkymo.github.io/portfolio/)
 ---
 
 *Metro Sales Analysis · Microsoft Excel Business Analysis Project*
