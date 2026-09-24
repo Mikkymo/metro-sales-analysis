@@ -4,7 +4,15 @@
 
 This project brings together seven supplied sales and lookup tables, a SQL analysis script, an Excel binary workbook and dashboard exports. The `Sales.csv` extract contains 57,851 sales rows. Its fields and salesperson records resemble an AdventureWorks-style sample; the original distributor has not been verified, so avoid claiming actual company performance.
 
-![Verified January-May comparison](images/metro-verified-comparison.png)
+## Original dashboard screenshots
+
+- [Open the original Metro dashboard screenshot](images/original-metro-sales-dashboard.png) — this is the same screenshot used on the portfolio website.
+- [Open the other original Metro dashboard screenshot](images/original-metro-dashboard.png).
+- [Open the source-verified comparison chart](images/metro-verified-comparison.png).
+
+The original screenshots are preserved as created. Their “53% decline” claim has not been reproduced from the supplied rows; use the verified comparison below for reported findings.
+
+![Original Metro sales dashboard screenshot](images/original-metro-sales-dashboard.png)
 
 ## Method
 
@@ -34,7 +42,7 @@ Start with product and regional cuts for the same calendar months, then inspect 
 | [`SQL_CAPSTONE_ONYX_COHORT.sql`](SQL_CAPSTONE_ONYX_COHORT.sql) | SQL queries |
 | [`images/metro-verified-comparison.png`](images/metro-verified-comparison.png) | Recalculated comparison from source rows |
 | [`verify_comparison.py`](verify_comparison.py) | Reproduce the comparison with pandas |
-| [`archive/`](archive/) | Earlier dashboard screenshots with an undocumented −53% claim |
+| [`images/original-metro-sales-dashboard.png`](images/original-metro-sales-dashboard.png), [`images/original-metro-dashboard.png`](images/original-metro-dashboard.png) | Original dashboard screenshots; preserve historical claims as shown |
 | `Sales.csv`, `Product.csv`, `Region.csv`, `Reseller.csv`, `Salesperson.csv`, `SalespersonRegion.csv`, `Targets.csv` | Source exports |
 
 **Analyst:** [Chukwuemeka Ogo](https://mikkymo.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/ogochukwuemeka/)
