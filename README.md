@@ -8,6 +8,8 @@ The project brings together **57,851 sales records and seven related tables**. I
 **Tools:** SQL · Excel · Python for verification  
 **Analyst:** Chukwuemeka Ogo
 
+**[View dashboards](docs/dashboard-gallery.md)** · [Explore SQL analysis](SQL_CAPSTONE_ONYX_COHORT.sql) · [Read methodology](docs/methodology.md)
+
 ## Business question
 
 Which products and regions should a sales manager investigate when sales grow but the amount remaining after recorded costs declines?
