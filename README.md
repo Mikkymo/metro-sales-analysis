@@ -1,50 +1,65 @@
-# Metro sales analysis
+# Metro Sales Analysis
+### Sales growth, recorded costs, and commercial performance
 
-**Question:** Why did sales grow while the gap between sales and recorded cost nearly disappear?
+A SQL and Excel portfolio case study exploring a practical business question: **does higher sales revenue translate into a stronger financial result?**
 
-This project brings together seven supplied sales and lookup tables, a SQL analysis script, an Excel binary workbook and dashboard exports. The `Sales.csv` extract contains 57,851 sales rows. Its fields and salesperson records resemble an AdventureWorks-style sample; the original distributor has not been verified, so avoid claiming actual company performance.
+The project brings together **57,851 sales records and seven related tables**. In a comparable January–May window, sales increased by **26.2%**, while sales minus recorded cost fell by **92.6%**.
 
-## Original dashboard screenshots
+**Tools:** SQL · Excel · Python for verification  
+**Analyst:** Chukwuemeka Ogo
 
-- [Open the original Metro dashboard screenshot](images/original-metro-sales-dashboard.png) — this is the same screenshot used on the portfolio website.
-- [Open the other original Metro dashboard screenshot](images/original-metro-dashboard.png).
-- [Open the source-verified comparison chart](images/metro-verified-comparison.png).
+## Business question
 
-The original screenshots are preserved as created. Their “53% decline” claim has not been reproduced from the supplied rows; use the verified comparison below for reported findings.
+Which products and regions should a sales manager investigate when sales grow but the amount remaining after recorded costs declines?
 
-![Original Metro sales dashboard screenshot](images/original-metro-sales-dashboard.png)
+The analysis supports a review of sales performance, cost growth, and the areas requiring further investigation.
 
-## Method
+## Key findings
 
-Use the supplied `Sales.csv`, `Product.csv`, `Region.csv`, `Reseller.csv`, `Salesperson.csv`, `SalespersonRegion.csv` and `Targets.csv` together with [`SQL_CAPSTONE_ONYX_COHORT.sql`](SQL_CAPSTONE_ONYX_COHORT.sql). The CSV exports contain tab-separated fields despite their `.csv` extensions, and monetary values need parsing before aggregation. Check join keys and date ranges before calculating period-on-period change. The Excel workbook is [`my_sql_capstone _FINAL.xlsb`](my_sql_capstone%20_FINAL.xlsb).
+The comparison uses **January–May in both 2019 and 2020** to avoid comparing a partial year with a full year.
 
-## Verified comparison
-
-The supplied `Sales.csv` has dates from July 2017 through May 2020. For a comparable **January–May** window:
-
-| Measure | 2019 | 2020 | Change |
+| Metric | Jan–May 2019 | Jan–May 2020 | Change |
 | --- | ---: | ---: | ---: |
 | Sales | $10,020,031.05 | $12,650,022.79 | +26.2% |
 | Recorded cost | $9,620,904.20 | $12,620,299.50 | +31.2% |
 | Sales minus recorded cost | $399,126.85 | $29,723.29 | −92.6% |
 
-This is a **sample-data comparison**, not a claim about a real company. The original “53% revenue decline” statement cannot be reproduced from this comparable period and has been removed. Costs grew faster than sales, so the next investigation should separate product mix, quantity, price and recorded cost changes. Do not call the difference net profit: operating expenses and returns are not represented here.
+**Business interpretation:** recorded costs grew faster than sales. Revenue growth therefore did not translate into growth in the amount remaining after those costs.
 
-## Decision use and limits
+![January–May sales and recorded-cost comparison](images/metro-verified-comparison.png)
 
-Start with product and regional cuts for the same calendar months, then inspect rows where `Cost` exceeds `Sales`. The CSV files are tab-delimited despite their `.csv` extension. The project uses sample sales records; confirm provenance before citing the dataset beyond the repository. No recovery intervention or measured business impact is documented.
+## Recommended next steps
 
-## Files
+1. Compare products and regions over the same months to locate the largest changes.
+2. Separate changes in quantity, selling price, product mix, and recorded cost.
+3. Review records where cost exceeds sales before proposing pricing or cost-control actions.
 
-| File | Purpose |
+These are proposed investigations; the project does not establish the cause of the decline or document an implemented business intervention.
+
+## Analytical approach
+
+- Combine sales data with product, region, reseller, salesperson, and target information.
+- Use SQL and Excel to explore business performance.
+- Recalculate the headline comparison directly from the sales extract using the included Python script.
+- Define metrics and comparison periods explicitly.
+
+Read the [methodology and reproduction guide](docs/methodology.md) for calculation details and the [data guide](docs/data-guide.md) for the source-file inventory.
+
+## Explore the project
+
+| Resource | Purpose |
 | --- | --- |
-| [`my_sql_capstone _FINAL.xlsb`](my_sql_capstone%20_FINAL.xlsb) | Excel analysis workbook |
-| [`SQL_CAPSTONE_ONYX_COHORT.sql`](SQL_CAPSTONE_ONYX_COHORT.sql) | SQL queries |
-| [`images/metro-verified-comparison.png`](images/metro-verified-comparison.png) | Recalculated comparison from source rows |
-| [`verify_comparison.py`](verify_comparison.py) | Reproduce the comparison with pandas |
-| [`images/original-metro-sales-dashboard.png`](images/original-metro-sales-dashboard.png), [`images/original-metro-dashboard.png`](images/original-metro-dashboard.png) | Original dashboard screenshots; preserve historical claims as shown |
-| `Sales.csv`, `Product.csv`, `Region.csv`, `Reseller.csv`, `Salesperson.csv`, `SalespersonRegion.csv`, `Targets.csv` | Source exports |
+| [SQL analysis](SQL_CAPSTONE_ONYX_COHORT.sql) | Original analytical queries |
+| [Excel workbook](my_sql_capstone%20_FINAL.xlsb) | Original analysis and dashboard exercise |
+| [Verification script](verify_comparison.py) | Reproduce the reported period comparison |
+| [Methodology](docs/methodology.md) | Scope, formulas, and reproduction instructions |
+| [Data guide](docs/data-guide.md) | Tables, file format, and data limitations |
+| [Dashboard gallery](docs/dashboard-gallery.md) | Original dashboard designs and version notes |
 
-**Analyst:** [Chukwuemeka Ogo](https://mikkymo.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/ogochukwuemeka/)
+## Scope and limitations
 
-The Excel binary workbook retains the original exercise and may contain the previous, unverified year-over-year measure. Use the source CSV and reproduction script for the comparison above.
+This is a sample-data portfolio exercise; the original dataset distributor has not been verified. **Sales minus recorded cost is not net profit**, because operating expenses and returns are not represented. The original workbook and dashboard images retain earlier calculations; the findings above follow the source-based comparison. See the [dashboard version notes](docs/dashboard-gallery.md) for details.
+
+---
+
+[Portfolio](https://mikkymo.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/ogochukwuemeka/)
